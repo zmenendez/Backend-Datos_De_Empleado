@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "3a530760-e03d-42c6-9020-eec686527b76",
+		"name": "datosempleado.be",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32787306"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/colaborador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"colaborador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addColaborador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"edad\": 30,\r\n  \"direccion\": \"Calle Falsa 123\",\r\n  \"profesion\": \"Ingeniero\",\r\n  \"estadoCivil\": \"Soltero\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/colaborador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"colaborador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putColaborador",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"María\",\r\n  \"apellido\": \"Gómez\",\r\n  \"edad\": 28,\r\n  \"direccion\": \"Avenida Siempre Viva 742\",\r\n  \"profesion\": \"Arquitecta\",\r\n  \"estadoCivil\": \"Casada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/colaborador/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"colaborador",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/colaborador/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"colaborador",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
