@@ -12,6 +12,7 @@
   "author": "Ottoniel Menéndez",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mysql2": "^3.11.5"
@@ -19,5 +20,6 @@
   "devDependencies": {
     "nodemon": "^3.1.9",
     "prettier": "^3.4.2"
-  }
+  },
+  "type": "module"
 }
