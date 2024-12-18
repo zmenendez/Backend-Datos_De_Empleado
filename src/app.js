@@ -3,6 +3,9 @@ import morgan from 'morgan';
 import cors from 'cors';
 import router from './routes/colaborador.routes.js';
 import helmet from 'helmet';
+import { generateToken } from './helper/generateToken.js';
+import verifyToken from './middlewares/validateToken.js';
+
 const app = express();
 
 // Middlewares globales
@@ -12,8 +15,11 @@ app.use(express.json()); // Parsear cuerpos JSON
 app.use(express.urlencoded({ extended: false })); // Parsear datos de formularios
 app.use(helmet()); // Mejora la seguridad de la aplicación
 
-// Rutas
-app.use('/colaborador', router);
+// Generador del token
+generateToken(); // Esto imprimirá el token en consola
+
+// Rutas protegidas
+app.use('/colaborador', verifyToken, router); // Aplica el middleware `verifyToken` antes de las rutas
 
 // Middleware para manejar rutas no encontradas
 app.use((req, res, next) => {

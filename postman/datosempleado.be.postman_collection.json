@@ -10,7 +10,13 @@
 			"name": "getAll",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhY2Nlc3MiOiJmdWxsIiwiaWF0IjoxNzM0NTM4MDY1LCJleHAiOjE3MzQ1NDE2NjV9.6ZZuulMxycfE9j3M7chmwEhR7TPCZuLyheKXlZXf2os",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:3001/colaborador",
 					"protocol": "http",
@@ -29,7 +35,13 @@
 			"name": "addColaborador",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhY2Nlc3MiOiJmdWxsIiwiaWF0IjoxNzM0NTM4MDY1LCJleHAiOjE3MzQ1NDE2NjV9.6ZZuulMxycfE9j3M7chmwEhR7TPCZuLyheKXlZXf2os",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"edad\": 30,\r\n  \"direccion\": \"Calle Falsa 123\",\r\n  \"profesion\": \"Ingeniero\",\r\n  \"estadoCivil\": \"Soltero\"\r\n}\r\n",
@@ -57,7 +69,13 @@
 			"name": "putColaborador",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhY2Nlc3MiOiJmdWxsIiwiaWF0IjoxNzM0NTM4MDY1LCJleHAiOjE3MzQ1NDE2NjV9.6ZZuulMxycfE9j3M7chmwEhR7TPCZuLyheKXlZXf2os",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n  \"nombre\": \"María\",\r\n  \"apellido\": \"Gómez\",\r\n  \"edad\": 28,\r\n  \"direccion\": \"Avenida Siempre Viva 742\",\r\n  \"profesion\": \"Arquitecta\",\r\n  \"estadoCivil\": \"Casada\"\r\n}\r\n",
@@ -68,7 +86,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/colaborador/1",
+					"raw": "http://localhost:3001/colaborador/14",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -76,19 +94,25 @@
 					"port": "3001",
 					"path": [
 						"colaborador",
-						"1"
+						"14"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "deleteColaborador",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJhY2Nlc3MiOiJmdWxsIiwiaWF0IjoxNzM0NTM4MDY1LCJleHAiOjE3MzQ1NDE2NjV9.6ZZuulMxycfE9j3M7chmwEhR7TPCZuLyheKXlZXf2os",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://localhost:3001/colaborador/1",
+					"raw": "http://localhost:3001/colaborador/14",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -96,7 +120,7 @@
 					"port": "3001",
 					"path": [
 						"colaborador",
-						"1"
+						"14"
 					]
 				}
 			},
